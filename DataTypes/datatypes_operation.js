@@ -9,5 +9,15 @@ console.log(1+2+"3");//33
 
 //jo opertion phle perform hoga output uske according aayega..
 
+console.log("6"+ 2);//62
+console.log("6"- 2);//4
+console.log("6"* 2);//12
+console.log("6"/ 2);//3
+
+
+
+
+
+
 
 
