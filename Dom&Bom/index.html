@@ -13,15 +13,42 @@
         molestias explicabo doloremque aspernatur reiciendis? Eius fuga at voluptates tempora beatae quia rem
         consectetur dicta quo doloremque! Quo quae excepturi sunt eligendi illo voluptatum assumenda exercitationem nemo
         velit nulla, rerum amet beatae adipisci nihil autem sint.</p> -->
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
 </body>
 <script>
-    //create elment
-    const div =document.createElement('div')
-    div.id='h1'
-    div.style.color='red'
-    div.className='firstclass'
-    const addtext=document.createTextNode('anuj sain')
-    div.appendChild(addtext)
+//     //create elment
+//     const div =document.createElement('div')
+//     // div.id='h1'
+//     // div.style.color='red'
+//     // div.className='firstclass'
+//    const addtext= div.innerHTML='anuj'
+//     div.appendChild(addtext)
+function addLang(langName) {
+    const li=document.createElement('li')
+    li.innerHTML=`${langName}`
+    document.querySelector('.language').appendChild(li)
+}
+
+function optiadd(langName) {
+    const li=document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+}
+addLang('python')
+optiadd('ruby')
+
+const firstchild=document.querySelector('li:first-child')
+// firstchild.innerHTML='anuj'
+const newli=document.querySelector('li')
+newli.textContent="Anuj"
+firstchild.replaceWith(newli)// one mor thing to change the elment is outerHTML
+
+
+const reele=document.querySelector('li:last-child')
+reele.remove()
+
 </script>
 </html>
 
